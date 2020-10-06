@@ -13,7 +13,7 @@ public class CalculoImpostoRenda {
 	 * 
 	 * @param valor
 	 */
-	public static void calculaImposto(double valor) {
+	public static double calculaImposto(double valor) {
 	       //Declaração de Variáveis
 	       double imposto;
 	       double impostotot;
@@ -35,10 +35,11 @@ public class CalculoImpostoRenda {
 	     
 	       //Saída de dados
 	       System.out.println("Valor em Dinheiro: R$" + (valor*impostotot));
+	       return valor*impostotot;
 	    }
 	
 	
 	public static void main(String[] args) {
-		calculaImposto(200.5);
+		calculaImposto(200);
 	}
 }

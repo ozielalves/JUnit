@@ -6,7 +6,7 @@ import org.junit.Test;
 
 /**
  * @author Oziel Alves
- * @description Conta test
+ * 
  */
 
 public class ContaTest {
