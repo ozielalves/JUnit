@@ -33,7 +33,7 @@ public class CalculoImpostoRendaTest {
 	}
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+		assetEquals(entrada, esperado);
 	}
 
 }
