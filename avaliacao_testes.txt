@@ -1,0 +1,41 @@
+TESTE DE SOFTWARE I - T01
+Discente: Oziel Alves do Nasciment Júnior - 20170065711
+
+# Avaliação acerca dos Testes para a função Debitar na classe Conta
+
+* Exemplo 01: Teste bem efetuado.
+
+Exemplo 02: Há apenas um conta sendo utilizada para realizar os testes, em algum 
+momento isso acarretará em resultados falso-negativos ou falso-positivos, o saldo
+não está sendo conferido e os procedimentos de teste não são chamamdos por uma 
+função main.
+
+Exemplo 03: O saldo não é checado assim como o retorno da função debitar também 
+não é checado.
+
+Exemplo 04: O teste não tem lógica bem elaborada.
+
+Exemplo 05: O teste foi feito, no entanto o método utilizado foi desnecessário,
+apenas um "if" teria atendido o objetivo do teste, fora isso a função de teste
+também não foi chamada em uma função main.
+
+Exemplo 06: O código obedece pouco ou nennhum tipo de sintaxe, nenhum tipo de 
+comparação entre resultados obtidos e esperados foi realizada, dessa forma 
+nenhum teste foi realizado. 
+
+Exemplo 07: Apesar de bem feito, o teste não checa os retornos da função Debitar
+além disto, a chamadas dos procedimentos de testes em sequência pode acarretar na
+não execução dos testes posteriores à uma exceção ser gerada.
+
+Exemplo 08: Penas funções de tesde de débito foram definidas, mas nenhum teste
+propriamente dito foi realizado, nas funções implementadas nenhum teste de retorno
+foi identificado o que, mesmo que as funções fossem chamadas, traria brechas
+no teste.
+
+Exemplo 09: No código não houve nenhum tipo de comparação entre resultados obtidos
+e esperados, dessa forma nenhum teste foi realizado. 
+
+Exemplo 10: O teste da função débito está ok, no entanto o retorno não foi checado.
+
+LEGENDA:
+*: Teste selecionado como melhor.
