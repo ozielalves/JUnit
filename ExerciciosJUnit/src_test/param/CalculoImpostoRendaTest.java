@@ -6,6 +6,8 @@ package param;
 import static org.junit.Assert.*;
 
 //import java.lang.reflect.Array;
+//import java.util.Arrays;
+//import java.util.Collection;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -23,7 +25,6 @@ public class CalculoImpostoRendaTest {
 	private double entrada;
 	private double esperado;
 	
-	//Construtor
 	public CalculoImpostoRendaTest (double in, double esp) {
 		entrada = in;
 		esperado = esp;
@@ -32,33 +33,34 @@ public class CalculoImpostoRendaTest {
 	@Parameters(name = "{index}: CalcImposto[{0}]={1}")
 	public static Object[][] data() {
 		return new Object [][] {
-			{ 200, 40 },
-			{ 900, 180 },
-			{ 1200, 240 }, //1
-			{ 1201, 120,1 },
+			{ 200, 0 },
+			{ 900, 0 },
+			{ 1200, 0 }, 
+			{ 1201, 120.1 },
 			{ 3040, 304 },
-			{ 4999, 499,9 }, 
-			{ 5000, 500 }, //2
-			{ 5001, 750,15 },
-			{ 9074, 1481,1 },
-			{ 10001, 1500,15 }, //3
-			};
+			{ 4999, 499.9 }, 
+			{ 5000, 500 }, 
+			{ 5001, 750.15 },
+			{ 9074, 1481.1 },
+			{ 10001, 2000.2 },
+		};
 	}
 	
 //	@Parameter(0)
-	//	public int entrada;
+//	public double entrada;
 //	@Parameter(1)
-//	public int esperado;
+//	public double esperado;
 //	
 //	@Parameters
-//	public static Iterable<Object[]> data(){
-//		return Array.asList( new Object[][] {
+//	public static Collection<Double[]> data(){
+//		return Arrays.asList( new Double[][] {
 //			{0,0},{1,2},{3,4},{5,6},{7,8}
 //		});
 //	}
+	
 	@Test
 	public void test() {
-		assertEquals(esperado, CalculoImpostoRenda.calculaImposto(entrada));
+		assertEquals(esperado, CalculoImpostoRenda.calculaImposto(entrada), 0.00001);
 	}
 
 }

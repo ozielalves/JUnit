@@ -40,6 +40,6 @@ public class CalculoImpostoRenda {
 	
 	
 	public static void main(String[] args) {
-		calculaImposto(200);
+		calculaImposto(200.5);
 	}
 }
