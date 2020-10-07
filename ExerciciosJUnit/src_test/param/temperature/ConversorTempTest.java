@@ -8,11 +8,11 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
-
 /**
  * @author Oziel Alves
  * 
  */
+
 @RunWith(Parameterized.class)
 public class ConversorTempTest {
 	
@@ -32,6 +32,12 @@ public class ConversorTempTest {
 			{ 0, 32},
 			{ 10, 50},
 			{ 25, 77},
+			{ 30, 86},
+			{ 38, 100.4},
+			{ 40, 104},
+			{ 51, 123.8},
+			{ -10, 14},
+			{ -15, 5},
 		};
 	}
 	

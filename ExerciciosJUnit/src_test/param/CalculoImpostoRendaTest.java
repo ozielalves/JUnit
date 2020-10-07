@@ -19,6 +19,7 @@ import org.junit.runners.Parameterized.Parameters;
  * @author Oziel Alves
  * 
  */
+
 @RunWith(Parameterized.class)
 public class CalculoImpostoRendaTest {
 	
@@ -45,18 +46,6 @@ public class CalculoImpostoRendaTest {
 			{ 10001, 2000.2 },
 		};
 	}
-	
-//	@Parameter(0)
-//	public double entrada;
-//	@Parameter(1)
-//	public double esperado;
-//	
-//	@Parameters
-//	public static Collection<Double[]> data(){
-//		return Arrays.asList( new Double[][] {
-//			{0,0},{1,2},{3,4},{5,6},{7,8}
-//		});
-//	}
 	
 	@Test
 	public void test() {
