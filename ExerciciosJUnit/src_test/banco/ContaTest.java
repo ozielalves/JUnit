@@ -11,7 +11,7 @@ import org.junit.Test;
 
 public class ContaTest {
 
-	// TESTE DEBITAR
+	// Teste de sucesso para o método debitar
 	@Test
 	public void testDebitarSucesso() throws OperacaoIlegalException{
 		Conta c = new Conta("123", 20);
@@ -19,6 +19,7 @@ public class ContaTest {
 		assertEquals(10,c.getSaldo(),0.0);
 	}
 	
+	// Teste de insucesso para o método debitar
 	@Test
 	public void testDebitarNegativo() throws OperacaoIlegalException{
 		Conta c = new Conta("1234", 20);
@@ -33,6 +34,7 @@ public class ContaTest {
 		  }	
 	}
 	
+	// Teste de insucesso para o método debitar
 	@Test
 	public void testDebitarAlem() throws OperacaoIlegalException{
 		Conta c = new Conta("12345", 20);
@@ -46,7 +48,7 @@ public class ContaTest {
 		  }	
 	}
 
-	// TESTE CREDITAR
+	// Teste para o método creditar - Valor válido
 	@Test
 	public void testCreditarSucesso() throws OperacaoIlegalException{
 		Conta c = new Conta("12346", 0);
@@ -54,6 +56,7 @@ public class ContaTest {
 		assertEquals(100,c.getSaldo(),0.0);
 	}
 	
+	// Teste para o método creditar - Valor inválido
 	@Test
 	public void testCreditarNegativo() throws OperacaoIlegalException{
 		Conta c = new Conta("123567", 20);
@@ -68,7 +71,7 @@ public class ContaTest {
 		  }	
 	}
 	
-	// TESTE TRANSFERIR
+	// Teste para o método transferir - Valor válido
 	@Test
 	public void testTransferirSucesso() throws OperacaoIlegalException{
 		Conta c = new Conta("12345678", 20);
@@ -79,6 +82,7 @@ public class ContaTest {
 		
 	}
 	
+	// Teste para o método transferir - Valor inválido
 	@Test
 	public void testTransferirNegativo() throws OperacaoIlegalException{
 		Conta c = new Conta("123456789", 20);
@@ -95,6 +99,7 @@ public class ContaTest {
 		  }	
 	}
 	
+	// Teste para o método transferir - Valor inválido
 	@Test
 	public void testTransferirAlem() throws OperacaoIlegalException{
 		Conta c = new Conta("12345678910", 20);
@@ -109,6 +114,7 @@ public class ContaTest {
 		  }	
 	}
 	
+	// Teste de insucesso para o método transferir
 	@Test
 	public void testTransferirSelf() throws OperacaoIlegalException{
 		Conta c = new Conta("12345678910", 20);

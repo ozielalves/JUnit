@@ -44,6 +44,11 @@ public class calculaImpostoTest {
 		assertEquals(10001*0.2, CalculoImpostoRenda.calculaImposto(10001), 0.00001);
 	}
 	
+	@Test
+	public void testCVF4() {
+		assertEquals(1200*0.0, CalculoImpostoRenda.calculaImposto(1200), 0.00001);
+	}
+	
 	
 	// Teste para a Classe inválida baseada em Funcionalidade
 	@Test
